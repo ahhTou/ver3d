@@ -1,0 +1,26 @@
+#j1{
+    width: 150px;
+    height: 60px;
+    /*background:rgba(251,114,153,1);*/
+    background: rgb(2,181,218);
+    color: white;
+    border-radius: 3px;
+    transition: all 1s;
+    /*box-shadow: 3px 3px 3px rgba(192,192,192,0.5);*/
+    box-shadow:3px 3px 3px rgba(107,94,113,0.7);
+    text-align: center;
+    line-height: 60px;
+    font-size: 20px;
+    /*display: table-cell;*/
+    /*vertical-align:middle;*/
+}
+
+/*#yuan{*/
+    /*width: 200px;*/
+    /*height: 200px;*/
+    /*display:flex;*/
+    /*justify-content:center;*/
+    /*align-items:center;*/
+    /*background:black ;*/
+/*}*/
+

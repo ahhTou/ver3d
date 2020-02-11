@@ -1,0 +1,66 @@
+body{
+    background: white;
+}
+.maskbtn1box0{
+}
+.maskbtn1box{
+    background-image: url('http://ww1.sinaimg.cn/large/005YeTR9ly1gbp4b4ahe3j31fb0u0157.jpg');
+    font-family: "等线 Light";
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius: 10px;
+    animation: bgroundmove 100s infinite;
+    transition: all 0.3s;
+
+}
+.maskbtn1{
+    background: white;
+    border-radius: 9px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+#mskBtn1White{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap: wrap;
+    background: white;
+    border-radius: 9px;
+    transition: all 0.3s;
+
+}
+
+.maskbtn1text{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap: wrap;
+    color: #756773;
+    /*background: dimgrey;*/
+    /*-webkit-background-clip: text;*/
+    /*color: rgba(0,0,0,0);*/
+    /*animation: bgroundmove 100s infinite;*/
+    /*background-image: url('http://ww1.sinaimg.cn/large/005YeTR9ly1gbp4b4ahe3j31fb0u0157.jpg');*/
+}
+.maskbtn1textHide{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap: wrap;
+    color: #756773;
+    /*background: dimgrey;*/
+    /*-webkit-background-clip: text;*/
+    /*color: rgba(0,0,0,0);*/
+    /*animation: bgroundmove 100s infinite;*/
+    /*background-image: url('http://ww1.sinaimg.cn/large/005YeTR9ly1gbp4b4ahe3j31fb0u0157.jpg');*/
+}
+@keyframes bgroundmove {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 100% 0;
+    }
+}

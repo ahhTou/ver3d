@@ -1,0 +1,161 @@
+#big{
+    background-image: url('http://ww1.sinaimg.cn/large/005YeTR9ly1gbp4b4ahe3j31fb0u0157.jpg');
+    -webkit-background-clip: text;
+    color: rgba(0,0,0,0);
+    text-align: center;
+    transition: all 4s;
+    background-size: cover;
+}
+#minbox{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+}
+#allbody{
+    z-index: 100;
+}
+
+/*控制ck位置*/
+#CkBox0{
+    transition: all 0.5s;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:relative;
+}
+.txt1{
+    transition: all 4s;
+    padding-right: 1000px;
+    overflow: hidden;
+    white-space: nowrap;
+
+}
+#min {
+    position: center;
+    background-image: url('http://ww1.sinaimg.cn/large/005YeTR9ly1gbp4b4ahe3j31fb0u0157.jpg');
+    -webkit-background-clip: text;
+    color: rgba(0,0,0,0);
+}
+#body0{
+    background: black;
+}
+.body1{
+    transition: all 3s;
+}
+#ck{
+    text-align: center;
+    color: #756773;
+    font-family: "等线 Light";
+}
+.ww1{
+    transition: all 3s;
+    transform: scale(2,2);
+}
+.CkJump{
+    animation:ckani 2s;
+    animation-iteration-count:infinite;
+    animation-direction:alternate;;
+}
+.CkBig{
+    animation:CkBig 2s;
+    animation-iteration-count:infinite;
+    animation-direction:alternate;;
+}
+.bigZgo{
+    animation:bigz 4s;
+    animation-iteration-count:1;
+    animation-fill-mode:forwards;
+}
+.anm4{
+    animation:big4 4s;
+    animation-iteration-count:1;
+    animation-fill-mode:forwards;
+}
+@keyframes ckani
+{
+    0% {opacity: 1;transform:translateY(0px)}
+    100% {opacity: 1;transform:translateY(-50px)}
+}
+@keyframes CkBig
+{
+    0% {opacity: 0.5;}
+    100% {opacity: 1;transform:scale(1.1,1.1)}
+}
+@keyframes bigz {
+    0% {transform:rotateX(0deg)}
+    75% {transform:rotateX(60deg)}
+    90% {transform:rotateX(-20deg)}
+    100% {transform:rotateX(0deg)}
+
+
+}
+@keyframes big4 {
+    0% {transform:rotateX(-50deg) translateY(70px);}
+    75% {transform:rotateX(60deg)}
+    90% {transform:rotateX(-20deg)}
+    100% {transform:rotateX(0deg)}
+
+}
+#fang{
+    width: 500px;
+    bottom: 100px;
+    height: 150px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+#yuan{
+    width: 500px;
+    height: 150px;
+    bottom: 100px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+#fang0{
+    display: inline-block;
+}
+#yuan0{
+    display: inline-block;
+}
+#btnLine{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap: wrap;
+}
+#btnBox{
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position: relative;
+    flex-wrap: wrap;
+}
+#LtBtn{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+a {
+    text-decoration: none;
+}
+a:link {
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+a:active {
+    text-decoration: none;
+}
+a:focus {
+    text-decoration: none;
+}

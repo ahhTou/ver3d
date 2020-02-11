@@ -1,0 +1,170 @@
+#floatBtnMaxBox{
+    position: fixed;
+    z-index:100;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height: 100px;
+}
+.floatBtnbox{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+#floatBtnHide{
+    position: relative;
+    display: inline-block;
+    float: right;
+
+}
+#floatBtn1Box{
+    /*height: 120px;*/
+    /*width: 120px;*/
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+#floatBtn1{
+    margin: 10px;
+     display:flex;
+     justify-content:center;
+     align-items:center;
+
+     transition: all 1s;
+     border: #756773 solid 1px;
+     width: 90px;
+     height: 90px;
+     background: rgba(107,94,113,0.1);
+     border-radius: 1000px;
+     font-size: 100px;
+
+
+ }
+.floatBtn1moreCri{
+    float: left;
+    margin: 10px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    transition: all 1s;
+
+    width: 80px;
+    height: 80px;
+
+    border: #756773 solid 1px;
+
+    background: rgba(107,94,113,0.1);
+
+    border-radius: 1000px;
+}
+/*#floatBtnMore1Pic::before{*/
+    /*position: absolute;*/
+    /*z-index: -100;*/
+    /*background:rgba(51,51,51,0.6);*/
+    /*top: 0;*/
+    /*right: 0;*/
+    /*bottom: 0;*/
+    /*left: 0;*/
+    /*content: '';*/
+    /*border-radius: 50px;*/
+    /*filter: blur(1px);*/
+/*}*/
+#floatBtnMore1Pic{
+    transition: all 1s;
+    position: relative;
+    top: 2px;
+    width: 50px;
+    height: 50px;
+    animation: bgroundmove 100s infinite;
+    background: url('http://ww1.sinaimg.cn/large/005YeTR9ly1gbp4b4ahe3j31fb0u0157.jpg');
+    -webkit-mask: url(http://q5hdebxbr.bkt.clouddn.com/r6sLogo.svg);
+    -webkit-mask-size: cover;
+    mask: url(http://q5hdebxbr.bkt.clouddn.com/r6sLogo.svg);
+    mask-size: cover;
+
+}
+#floatBtnMoreBPic{
+    transition: all 1s;
+    position: relative;
+    top: 2px;
+    width: 50px;
+    height: 50px;
+    animation: bgroundmove 100s infinite;
+    background-image: url('http://ww1.sinaimg.cn/large/005YeTR9ly1gbp4b4ahe3j31fb0u0157.jpg');
+    -webkit-mask: url(http://q5hdebxbr.bkt.clouddn.com/bzLogo.svg);
+    -webkit-mask-size: cover;
+    mask: url(http://q5hdebxbr.bkt.clouddn.com/bzLogo.svg);
+    mask-size: cover;
+
+}
+#floatBtnPic{
+    transition: all 1s;
+    width: 30px;
+    height: 30px;
+    transform:rotate(45deg);
+    background-image: url('http://ww1.sinaimg.cn/large/005YeTR9ly1gbp4b4ahe3j31fb0u0157.jpg');
+    animation: bgroundmove 100s infinite;
+    box-shadow:3px 3px 3px rgba(107,94,113,0.7);
+    border-radius: 10px;
+    font-size: 100px;
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+#floatBtnMoreHomePic{
+    transition: all 1s;
+    width: 40px;
+    height: 40px;
+    transform:rotate(90deg);
+    background-image: url('http://ww1.sinaimg.cn/large/005YeTR9ly1gbp4b4ahe3j31fb0u0157.jpg');
+    animation: bgroundmove 100s infinite;
+    box-shadow:3px 3px 3px rgba(107,94,113,0.7);
+    border-radius: 10px;
+    font-size: 100px;
+    clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%);
+
+
+}
+
+#floatBtn1:hover{
+    /*transform: scale(1.1,1.1);*/
+}
+#floatBtn1:active{
+    transform: scale(0.8,0.8);
+}
+/*#floatBtn1:hover #floatBtnPic{*/
+    /*transform: scale(0.8,0.8) rotateZ(270deg);*/
+/*}*/
+.floatBtn1moreCri:hover{
+    transform: scale(1.1,1.1);
+}
+.floatBtn1moreCri:hover #floatBtnMore1Pic{
+    transform: scale(0.8,0.8) rotateZ(360deg);
+    background: red;
+}
+.floatBtn1moreCri:hover #floatBtnMoreBPic{
+    transform: scale(1.2,1.2);
+    background: rgb(2,181,218);
+}
+
+@keyframes bgroundmove {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 100% 0;
+    }
+}
+.floatBtnHideAnm1{
+    animation: btnhideami 0.5s;
+}
+.floatBtnHideAnm1Out{
+    animation: btnhideamiOut 0.5s;
+}
+@keyframes btnhideami {
+    from {transform: translateX(-20px); opacity:0 ;}
+    to{ transform: translateX(0px);, opacity: 1;}
+}
+@keyframes btnhideamiOut {
+    from {    transform: translateX(0px);opacity:1;}
+    to{ transform: translateX(-20px); opacity:0;}
+}
